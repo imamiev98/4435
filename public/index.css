@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #C0C0C0;
+}
+header{
+    text-align: center;
+    font-size: 30px;
+    height: 75px;
+    color: #000000;
+border:5px solid #696969;
+background: #FFDEAD;
+
+}
+#main{
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    min-height: calc(100vh - 150px);
+}
+article,
+nav,
+aside{
+    width: 20%;
+    box-shadow: 0px 4px 46px 0px rgba(0, 0, 0, 0.07);
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+margin: -10px;
+    padding: 5px;
+border: 5px solid #696969; 
+    background: #90EE90;
+flex: 3 1 60%;
+   order: 2;
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+text-align: center;
+    font-size: 30px;
+margin: -10px;
+    padding: 5px;
+    border: 5px solid #696969;
+    background: #B0E0E6;
+ flex: 1 6 20%;
+    order: 3;
+}
+label{
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+margin: -10px;
+    padding: 5px;
+  border: 5px solid #696969;
+    background: #B0E0E6;
+
+}
+nav a{
+    display: block;
+    margin: 15px 0;
+    transition: 0.5s;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+nav a:hover{
+    background: #00adde;
+    color: #fff;
+}   
+input{
+    display: block;
+    box-shadow: 0px 4px 46px 0px rgba(0, 0, 0, 0.07);
+    height: 35px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #999;
+    text-align: center;
+}
+span{
+    display: block;
+    box-shadow: 0px 4px 46px 0px rgba(0, 0, 0, 0.07);
+    height: 35px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #999;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+footer{
+    text-align: center;
+    font-size: 30px;
+    height: 75px;
+    color: #000000;
+border:5px solid #696969;
+background: #FFDEAD;
+}
+@media (max-width: 700px){
+    #main{
+        flex-direction: column;
+    }
+    article,
+    nav,
+    aside{
+        width: 100%;
+        min-height: 300px;
+    }
+}
